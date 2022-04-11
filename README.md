@@ -8,10 +8,11 @@ It currently has:-
 
 Features:-
 - ssh key generation
-- support 3 types of key pair
-  - ed255
-  - rsa
-  - legacy
+- support 4 types of key pair
+  - ed25519
+  - rsa 4096
+  - ed25519-sk
+  - ecdsa-sk
 - ask user for email and username in the runtime
 - Automatically copy .pub code (if termux api app installed)
 - Does not collect user data
@@ -20,7 +21,7 @@ Supported OS:
 - Termux only, others not tested
 
 Dependency:-
-- Termux Api App [[Download->]](https://) (f-droid)
+- Termux Api App [[Download->]](https://f-droid.org/en/packages/com.termux.api/) (f-droid)
 
 ### How to install:
 ```sh
