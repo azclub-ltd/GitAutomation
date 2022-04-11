@@ -1,7 +1,7 @@
-# git-automation
+# TermuxGitTools
 This is a basic automation tool for git. You can do some basic thing of github without knowing git
 
-Git Automation has now only one tool, Hope I will manage time to make it resourceful
+TermuxGitTols has now only one tool, Hope I will manage time to make it resourceful
 
 It currently has:-
 1. ssh generator for Termux
