@@ -25,7 +25,7 @@ Dependency:-
 
 ### How to install:
 ```sh
-wget https://raw.githubusercontent.com/azclub-ltd/GitAutomation/master/git-ssh.sh && chmod +x git-ssh.sh && ./git-ssh.sh
+curl --remote-name https://raw.githubusercontent.com/azclub-ltd/GitAutomation/master/git-ssh.sh && chmod +x git-ssh.sh && ./git-ssh.sh
 ```
 
 ### You can delete this installer after generating

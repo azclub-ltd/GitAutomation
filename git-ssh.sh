@@ -50,11 +50,11 @@ funGenSsh() {
 	fi
 }
 # Now It's time to check type
-echo "Choose key type: "
-echo "${YELLOW}[1] ed25519 (default)"
+echo "${YELLOW}Choose key type: ${NC}"
+echo "[1] ed25519 (default)"
 echo "[2] rsa 4096 (legacy - android 10+)"
 echo "[3] ed25519-sk (Hardware SK)"
-echo "[4] ecdsa-sk (Hardware SK)${NC}"
+echo "[4] ecdsa-sk (Hardware SK)"
 # Check type
 checkType() {
 	read KEY_TYPE
@@ -72,15 +72,16 @@ checkType() {
 	funGenSsh 4
 	else
 		# Return Invalid and ask again for input
-	echo "Invalid Option"
+	echo "${RED}Invalid Option${NC}"
 	checkType
 	fi
 }
 checkType
 copyClip() {
-echo "[+] Installing Termux Api.."
-pkg install termux-api
-# Copy public ssh code to clipboard
-cat ~/.ssh/$FILENAME.pub | termux-clipboard-set
+  echo "${LIGHTGREEN}[+] Installing Termux Api..${NC}"
+  pkg install termux-api
+  # Copy public ssh code to clipboard
+  cat ~/.ssh/$FILENAME.pub | termux-clipboard-set
+  echo "${LIGHTGREEN}[=] Copied to clipboard ${NC}"
 }
 copyClip
